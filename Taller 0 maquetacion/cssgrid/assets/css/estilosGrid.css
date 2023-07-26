@@ -294,7 +294,6 @@ nav a:hover{
     align-content: center;
     margin-left: 10%;
 }
-
 .feature{
     min-width: 150px;
     max-width: 180px;
@@ -303,13 +302,11 @@ nav a:hover{
     text-align: center;
     border-radius: 5px;
     align-content: center;
-}   
-
+}
 .feature i{
     font-size: 2.2em;
     margin-bottom: 1.5rem;
 }
-
 .feature-blue{
     grid-area: 1/1/1/1;
     background-color: rgba(0, 50, 94, 0.682);
