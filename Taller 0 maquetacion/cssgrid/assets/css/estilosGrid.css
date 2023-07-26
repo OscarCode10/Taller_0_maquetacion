@@ -24,7 +24,7 @@ body{
 }
 #cont{
     display:grid;
-    grid-template-rows: 6rem 12.6rem 87rem 25rem 36rem 1rem 20rem 1fr;
+    grid-template-rows: 6rem 12.6rem 51rem 25rem 36rem 1rem 20rem 1fr;
 }
 
 h1,h2,h3,h4,h5{
@@ -182,7 +182,7 @@ nav a:hover{
     position: relative;
     right: 1rem;
     padding: 4rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: justify;
 }
 #descripcion img{
@@ -231,7 +231,7 @@ nav a:hover{
 .nues{
     display: grid;
     grid-row: 6/6;
-    background-color: var(--negro);
+    background-color: var(--negro2);
     width:auto;
     height: 9rem;
     text-align: center;
