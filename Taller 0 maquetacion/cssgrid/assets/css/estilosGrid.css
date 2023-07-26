@@ -24,59 +24,86 @@ body{
 }
 #cont{
     display:grid;
-    grid-template-rows: 20.2rem 12.6rem 73rem 25rem 36rem 1rem 1fr;
+    grid-template-rows: 6rem 12.6rem 87rem 25rem 36rem 1rem 20rem 1fr;
 }
 
 h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
 footer{
-    display: block;
+    display: grid;
+    grid-template-rows: 6rem 0.01rem 8rem 0.01rem 6rem 0.01rem 6rem;
+    grid-template-columns: 50% 50%;
+    grid-row: 8/8;
     font-size: 1rem;
     background-color: var(--negro2);
     color: var(--blanco);
 }
-.fo{
-    display:grid;
-    grid-template-columns: ;
-}
-.fo p{
-    margin-left: 0.5rem;
+.foot{
+    display: grid;
+    grid-area: 1/1/1/3;
+    margin: 2rem;
+    padding: auto;
 }
 .lineFo{
-    display: flex;
+    display: grid;
+    grid-area: 2/1/2/3;
     margin-left: 1rem;
     margin-right: 1rem;
     background-color: var(--blanco);
     width: 95%;
     height: 0.01rem;
 }
-.foot{
+.foot1{
+    display: block;
+    grid-area: 3/1/3/3;
     margin: 2rem;
-    flex: 1;
     padding: auto;
+}
+.fo{
+    display:grid;
+    grid-row: 2/2;
+}
+.fo p{
+    display: grid;
+    margin-left: 0.5rem;
+}
+.lineFo1{
+    display: grid;
+    grid-area: 4/1/4/3;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: var(--blanco);
+    width: 95%;
+    height: 0.01rem;
 }
 .poli{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-area: 5/1/5/3;
     margin: 2rem;
-    flex: 1;
-    padding: auto;
+}
+.lineFo2{
+    display: grid;
+    grid-area: 6/1/6/3;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: var(--blanco);
+    width: 95%;
+    height: 0.01rem;
 }
 .icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-size: 2rem;
+    display: grid;
+    grid-area: 7/1/7/3;
+    grid-template-columns: auto auto auto 1fr;
+    font-size: 2rem;    
     margin: 2rem;
 }
 .icon{
     margin-right: 1rem;
 }
 nav{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-row: 1/1;
     font-family: 'Marcellus', serif;
     font-size: 1.3em;
     z-index: 100;
@@ -99,10 +126,8 @@ nav{
 }
 .menu{
     background-color: rgba(1, 10, 52, 0.838);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+    display: none;
+    grid-row: 2/2;
 }
 .menu-hr{
     width: 90%;
@@ -129,6 +154,10 @@ nav a:hover{
     font-family: 'Marcellus', serif;
     color: var(--blanco);
 }
+#banner{
+    display: grid;
+    grid-row: 2/2;
+}
 #banner img{
     width: 100%;
     height: auto;
@@ -145,11 +174,13 @@ nav a:hover{
 }
 /*Descripción*/
 #descripcion{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: grid;
+    grid-row:3/3;
 }
 #descripcion p{
+    margin: 2rem;
+    position: relative;
+    right: 1rem;
     padding: 4rem;
     font-size: 2rem;
     text-align: justify;
@@ -157,65 +188,68 @@ nav a:hover{
 #descripcion img{
     display: none;
 }
-/*Features*/
-#features{
-    background: url(../img/index/bg-features.png);
-    color: white;
-    padding-top: 1rem;
-}
+
 #ubicacion{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0rem;
+    display:grid;
+    grid-row: 5/5;
+    grid-template-rows: 3rem 25rem 2rem 0.5rem 0.2rem;
+    grid-template-columns: 50% 50%;
+}
+#ubicacion iframe{
+    grid-area: 2/1/2/3;
+    margin-left: 1.8rem;
 }
 #ubicacion h1{
+    text-align: center;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    grid-area: 1/1/2/3;
 }
 #ubicacion h2{
-    display: flex;
+    grid-area: 3/1/3/3;
     font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
-.line{
-    display: flex;
+#ubicacion .line{
+    grid-area: 4/1/4/3;
     margin-top: 0.5rem;
     background-color: var(--azuloscuro);
-    width: 100%;
+    margin-left: 1.5rem;
+    width: 90%;
     height: 0.01rem;
 }
+#ubicacion .num{
+    grid-area: 5/1/5/3;
+    text-align: center;
+    font-size: 1rem;
+}
 #opinion{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: grid;
+    grid-row: 7/7;
 }
 .nues{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-row: 6/6;
     background-color: var(--negro);
     width:auto;
-    height: 9rem; 
+    height: 9rem;
+    text-align: center;
 }
 .nues h1{
     font-size: 2.1rem;
     position: relative;
-    bottom: 40px;
+    top: 0.5rem;
     color: var(--blanco);
 }
-
-.card{
-    display: flex;
-    flex-direction: column;
+.card{    
     background-image: var(--degradado);
     border-radius: 0.2rem;
-    margin: 6rem;
+    margin: 7rem;
     width: 18rem;
     height: 12rem;
     position: relative;
-    bottom: 1.8rem;
+    bottom: 2.8rem;
 }
 .card p{
     padding: 1rem;
@@ -232,8 +266,20 @@ nav a:hover{
 .card2{
     display: none;
 }
-
+/*Features*/
+#features{
+    display: grid;
+    grid-row: 4/4;
+    background: url(../img/index/bg-features.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 1rem;
+}
 .features-title{
+    display: grid;
+    grid-row: 1/1;
+    grid-column: 1/3;
     background-color: rgba(0,0,0,0.35);
     text-align: center;
     padding: 0.5rem;
@@ -241,9 +287,12 @@ nav a:hover{
 }
 
 .features-description{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 12.5rem 12.5rem;
+    grid-template-rows: 7rem 7rem;
+    align-items: center;
+    align-content: center;
+    margin-left: 10%;
 }
 
 .feature{
@@ -251,12 +300,10 @@ nav a:hover{
     max-width: 180px;
     margin: 1rem;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     border-radius: 5px;
-}
+    align-content: center;
+}   
 
 .feature i{
     font-size: 2.2em;
@@ -264,11 +311,31 @@ nav a:hover{
 }
 
 .feature-blue{
+    grid-area: 1/1/1/1;
     background-color: rgba(0, 50, 94, 0.682);
+    position: relative;   
+    right: 1rem;
 }
-
+.feature-blue1{
+    grid-area: 2/2/2/2;
+    background-color: rgba(0, 50, 94, 0.682);
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
 .feature-black{
+    grid-area: 1/2/1/2;
     background-color: rgba(0,0,0,0.59);
+    position: relative;   
+    right: 1rem;
+    left: 1rem;
+}
+.feature-black1{
+    grid-area: 2/1/2/1;
+    background-color: rgba(0,0,0,0.59);
+    position: relative;
+    top: 1rem;
+    right: 1rem;
 }
 
 /*Resolución tablet*/
@@ -303,7 +370,8 @@ nav a:hover{
         display: flex;
     }
     #opinion{
-        flex-direction: row;
+        display: grid;
+        grid-row: 6/6;
     }
     .card1{
         display: flex;
@@ -357,9 +425,8 @@ nav a:hover{
     } 
     .menu{
         background-color: var(--negro2);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: grid;
+        grid-row: 1/1;
     }
     .menu-hr{
         display: none;
@@ -371,7 +438,7 @@ nav a:hover{
         display: flex;
         align-items: center; 
         justify-content: space-around;
-        padding: 3rem;
+        padding: 1rem;
     }
     #descripcion p{
         flex-basis:70%;

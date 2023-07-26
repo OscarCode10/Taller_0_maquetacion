@@ -13,11 +13,12 @@ body{
     background: url('../img/bg-login.png');
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 14px;
+    font-size: 1rem;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70%;
 }
 .cont{
     display: flex;
@@ -25,6 +26,7 @@ body{
     justify-content: center;
     background-color: var(--4);
     border-radius: 0.2rem;
+    margin-left: 45%;
 }
 .cont div{
     display: flex;
@@ -63,7 +65,7 @@ input{
     height: 2.5rem;
     border: none;
     border-radius: 0.2rem;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 .btn{
     display: flex;
