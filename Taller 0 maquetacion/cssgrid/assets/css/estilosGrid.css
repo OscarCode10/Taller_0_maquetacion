@@ -24,7 +24,7 @@ body{
 }
 #cont{
     display:grid;
-    grid-template-rows: 6rem 12.6rem 51rem 25rem 36rem 1rem 20rem 1fr;
+    grid-template-rows: 6rem 12.6rem 30rem 25rem 36rem 1rem 20rem 1fr;
 }
 
 h1,h2,h3,h4,h5{
@@ -176,19 +176,31 @@ nav a:hover{
 #descripcion{
     display: grid;
     grid-row:3/3;
+    grid-template-columns: 92% 1fr;
 }
 #descripcion p{
     margin: 2rem;
     position: relative;
-    right: 1rem;
-    padding: 4rem;
-    font-size: 1.5rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    width: 85%;
     text-align: justify;
 }
 #descripcion img{
     display: none;
 }
-
+.vertical-text {
+    grid-area: 1/2/1/2;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    color: var(--blanco);
+    background-color: var(--Magenta);
+    height: 50%;
+    position: relative;
+    bottom: 8rem;
+    margin-left: 0.5rem;
+}
 #ubicacion{
     display:grid;
     grid-row: 5/5;
@@ -346,11 +358,13 @@ nav a:hover{
 @media screen and (min-width: 1024px){
     #cont{
         display: grid; 
-     }
-    footer{
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 14rem 1fr ;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--negro2);
     }
     .lineFo{
         display: none;
@@ -401,13 +415,6 @@ nav a:hover{
         display: flex;
         width: 100%;
         height: auto;
-    }
-    nav{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        background-color: var(--negro2);
     }
 
     .logo{
