@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 :root{
-    --1: rgba(21, 69, 109, 0.94);
+    --1:#ffff;
+    --2:linear-gradient(to bottom,rgba(21, 69, 109, 0.95),rgba(54, 118, 173, 0.89) );
+    --3:rgba(230, 230, 230, 0.93);
+    --4:#222222;
 }
 body{
     display: flex;
@@ -16,5 +20,119 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--1);
+    align-items: center;
+    background-image: var(--2);
+    width: 27%;
+    color: var(--1);
+}
+
+.eres{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 3rem;
+}
+
+.eres h1{
+    font-family: 'Marcellus';
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.logi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 85%;
+    position: relative;
+    bottom: 5rem;
+}
+
+.logi img{
+    height: 7rem;
+    width: auto;
+}
+
+.logi h1{
+    font-size: 6rem;
+    font-family: 'Marcellus';
+    text-decoration: none;
+    font-weight:100;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 98%;
+    width: 56.2%;
+    border-radius: 0.6rem;
+    position: relative;
+    left: 10rem;
+    top: 0.7rem;
+    background-color: var(--3);
+}
+input{
+    border: none;
+    border-radius: 0.11rem;
+    height: 2.5rem;
+    width: 20rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.pack{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5rem;
+    margin-right: 2rem;
+    position: relative;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+.regis{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Marcellus';
+}
+.regis h1{
+    font-size:5rem;
+    font-weight: 100;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.check input{
+    height: 1rem;
+    width: 1rem;
+}
+.check h1{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.btn input{
+    font-family: 'Marcellus';
+    font-size: 1rem;
+    font-size:2rem;
+    font-weight: -300;
+    background-color: var(--4);
+    color: var(--1);
+    height: 4rem;
+    width: 18rem;
+    border-radius: 0.3rem;
 }
