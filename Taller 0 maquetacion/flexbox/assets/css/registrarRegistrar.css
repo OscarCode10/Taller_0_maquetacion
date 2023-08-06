@@ -2,3 +2,19 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --1: rgba(21, 69, 109, 0.94);
+}
+body{
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#hote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--1);
+}

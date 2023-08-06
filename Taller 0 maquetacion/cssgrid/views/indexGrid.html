@@ -15,10 +15,9 @@
         <nav>
             <div class="logo">
                 <img src="../assets/img/Hotelia horizontal blanco.svg">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="botonh" onclick="activacion()"></i>
             </div>
-    
-            <div class="menu">
+            <div class="menu" id="men">
                 <a href="index.html" class="item">Inicio</a>
                 <a href="ubicanos.html" class="item">Ubícanos</a>
                 <a href="opiniones.html" class="item">Opiniones</a>
@@ -34,9 +33,6 @@
             <p>
                 Estamos ubicados en el barrio La Cabrera al norte de Bogotá, en un contexto de lujo donde interactúan los negocios, el ocio y el descanso, gracias a su estratégica ubicación rodeada de bancos, restaurantes de alta cocina, centros comerciales, almacenes de lujo y emblemáticos parques para aprovechar la naturaleza entre la ciudad caminay y hacer un poco de deporte al aire libre están el parque del Virrey y El Parque de la 93. Además de nuestro exclusivo diseño, ponemos a tu disposición una oferta gastronómica tan sofisticada como saludable a base de productos locales, cargados de lo mejor de la tradición colombiana.
             </p>
-            <div class="vertical-text">
-                <h1>Reservar</h1>
-            </div>
             <img src="../assets/img/Hotelia negro vertical.svg" alt="Logo Hotelia" class="descripcion-logo"/>
         </section>
         <section id="features">
@@ -71,21 +67,42 @@
             <div class="line"></div>
             <h2 class="num">+57 123 1123123</h2>
         </section>
-        <div class="nues">
+        <div  class="nues">
             <h1>Nuestros usuarios dicen...</h1>
         </div>
         <section id="opinion">
             <div class="card">
-                <img src="../assets/img/Vector-opinion.png" >
+                <img src="../assets/img/Vector-opinion.png" class="vectori">
+                <div class="name_usu">
+                  <img src="../assets/img/user1.png" class="img_opinion_user">
+                  <div class="text_and_estrellas">
+                   <h1>Diego Rodriguez</h1>
+                   <img src="../assets/img/estrellas_uno.jpg" class="estrellas">
+                  </div>
+                </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda et aliquid, enim ullam reprehenderit voluptate eos quae.</p>
             </div>
             <div class="card1">
-                <img src="../assets/img/Vector-opinion.png" >
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda et aliquid, enim ullam reprehenderit voluptate eos quae fugit corporis id, tempore dignissimos magnam ex nisi quaerat obcaecati, cupiditate necessitatibus quo.</p>
+                <img src="../assets/img/Vector-opinion.png" class="vectori">
+                <div class="name_usu">
+                    <img src="../assets/img/user2.png" class="img_opinion_user">
+                    <div class="text_and_estrellas">
+                     <h1>Diana Garcia</h1>
+                     <img src="../assets/img/estrellas_dos.jpg" class="estrellas">
+                    </div>
+                  </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda et aliquid, enim ullam reprehenderit voluptate eos quae.</p>
             </div>
             <div class="card2">
-                <img src="../assets/img/Vector-opinion.png" >
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda et aliquid, enim ullam reprehenderit voluptate eos quae fugit corporis id, tempore dignissimos magnam ex nisi quaerat obcaecati, cupiditate necessitatibus quo.</p>
+                <img src="../assets/img/Vector-opinion.png" class="vectori">
+                <div class="name_usu">
+                    <img src="../assets/img/user1.png" class="img_opinion_user">
+                    <div class="text_and_estrellas">
+                     <h1>Diego Rodriguez</h1>
+                     <img src="../assets/img/estrellas_uno.jpg" class="estrellas">
+                    </div>
+                  </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda et aliquid, enim ullam reprehenderit voluptate eos quae.</p>
             </div>
         </section>
         <footer>
@@ -95,11 +112,11 @@
             <div class="lineFo"></div>
             <div class="foot1">
                 <div class="fo">
-                    <i class='bx bxs-map'></i>
+                    <i class='bx bxs-map' style="position: relative; top: 32px;right:15px;"></i>
                     <p>Avenida Carrera 8, #12A-42, BOGOTA D.C, colombiana</p>
                 </div>
-                <div class="fo">
-                    <i class='bx bxs-phone'></i>
+                <div class="fo1">
+                    <i class='bx bxs-phone' style="position: relative; top: 32px;right:15px;"></i>
                     <p>+57 3223496849</p>
                 </div>
             </div>
@@ -123,4 +140,6 @@
         </footer>
     </div>
 </body>
+<script src="../assets/js/eventos.js">
+</script>
 </html>
